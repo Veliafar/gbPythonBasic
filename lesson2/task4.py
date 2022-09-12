@@ -3,6 +3,17 @@
 #  Найдите произведение элементов на указанных позициях.
 #  Позиции хранятся в файле file.txt в одной строке одно число.
 
-num = int(input('Введите число: '))
+num = 20
 
-int_range = range(-num, num)
+numbers = []
+for i in range(-num, num+1):
+    numbers.append(i)
+
+print(numbers)
+
+file = open("file.txt", encoding="utf-8")
+indexes = []
+
+for line in file:
+    print(line.strip())
+    
