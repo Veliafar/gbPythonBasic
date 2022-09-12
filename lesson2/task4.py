@@ -15,5 +15,11 @@ file = open("file.txt", encoding="utf-8")
 indexes = []
 
 for line in file:
-    print(line.strip())
-    
+    indexes.append(int(line.strip()))
+
+multiply = 1
+for id in indexes:
+    multiply *= numbers[id]
+
+print(multiply)
+
