@@ -14,13 +14,12 @@ test_data = [
 ]
 
 
-def decadeToBinary(num: int):
+def decadeToBinary(num: int) -> str:
     string = ''
 
-    while num:
-        rest = num % 2
-        string = str(rest) + string
-        num = num // 2
+    while num:    
+        string = str(num % 2) + string
+        num //= 2
 
     return string
 
