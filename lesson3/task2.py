@@ -20,15 +20,10 @@ def calc_pair_multiply(list):
     while i <= j:
         result.append(list[i] * list[j])
         i = i + 1
-        j = j - 1        
-
-
-    print(result)
+        j = j - 1
 
     return result
     
-
-
 
 for list, expected in test_data:
     assert calc_pair_multiply(list) == expected
