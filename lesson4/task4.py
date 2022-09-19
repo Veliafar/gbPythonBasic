@@ -17,10 +17,9 @@ def print_poly(coeff):
         if i != n -1:
             print(" + ", end="")
 
-
 randomlist = []
 
-for i in range(0,5):
+for i in range(0, random.randint(2,6)):
     n = random.randint(1,100)
     randomlist.append(n)
 
